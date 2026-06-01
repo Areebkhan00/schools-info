@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Search and filter schools by location, facilities, and features.">
+    <title>Search Schools - SchoolsInfo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="https://static.vecteezy.com/system/resources/previews/021/013/584/non_2x/graduation-hat-on-transparent-background-free-png.png"
+                    alt="SchoolsInfo Logo" class="logo-icon">
+                <span class="logo-text">SchoolsInfo</span>
+            </a>
+            <button class="mobile-menu-btn" aria-label="Toggle Menu">☰</button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="schools.html">Schools</a></li>
+                    <li><a href="search.html">Search</a></li>
+                    <li><a href="locations.html">Locations</a></li>
+                    <li><a href="sitemap.html">Site Map</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Search Schools</h1>
+            <p>Find schools that meet your specific requirements and preferences</p>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section class="container">
+        <div class="search-section">
+            <h2 style="color: #1e40af; margin-bottom: 1.5rem;">Search & Filter</h2>
+
+            <div class="search-filters">
+                <div class="filter-group">
+                    <label for="searchLocation">Location or School Name</label>
+                    <input type="text" id="searchLocation" placeholder="Enter location or school name...">
+                </div>
+            </div>
+
+            <div style="margin-top: 1.5rem;">
+                <h3 style="color: #1e40af; margin-bottom: 1rem; font-size: 1.125rem;">Filter by Facilities</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="filterLibrary">
+                        <label for="filterLibrary">Library Available</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="filterCanteen">
+                        <label for="filterCanteen">Canteen Available</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="filterBoarding">
+                        <label for="filterBoarding">Boarding Available</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="filterSports">
+                        <label for="filterSports">Sports Facilities</label>
+                    </div>
+                </div>
+            </div>
+
+            <div style="display: flex; gap: 1rem; margin-top: 1.5rem;">
+                <button id="searchBtn" class="btn btn-secondary">Search</button>
+                <button id="clearFilters" class="btn btn-primary">Clear Filters</button>
+            </div>
+        </div>
+
+        <div style="margin: 2rem 0;">
+            <h3 id="resultsCount" style="color: #6b7280; font-size: 1.125rem;">Showing results...</h3>
+        </div>
+
+        <div class="schools-grid" id="searchResults">
+            <!-- Search results will be loaded by JavaScript -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>SchoolsInfo</h3>
+                <p>Your trusted partner in finding quality education for your children.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="schools.html">All Schools</a></li>
+                    <li><a href="search.html">Search</a></li>
+                    <li><a href="locations.html">Locations</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Information</h3>
+                <ul>
+                    <li><a href="sitemap.html">Site Map</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: info@schoolsinfo.com</p>
+                <p>Phone: +1 234-567-8900</p>
+                <p>Address: 100 Education Plaza, City</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>& copy; 2024 SchoolsInfo. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script src="js/search.js"></script>
+</body>
+
+</html>
